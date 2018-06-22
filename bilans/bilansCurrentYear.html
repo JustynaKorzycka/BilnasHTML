@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Bilans</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	
+</head>
+<body onload="currentYear();">
+    <header>
+        <p><span style="font-size:25px; margin-left: 400px;">Przegląd bilansu finansowego z bieżącego miesiąca</span></p>
+    </header>
+    <article>
+    <main>
+    <div class="bilansContainer">
+        <div id="todayMonth"> </div>
+        <div id="monthIncomes" class="incomesTable">
+            <table>
+                
+                <tr>
+                    <td colspan="2">Przychody</td>
+                </tr>
+                <tr>
+                    <td width="150">Kategoria</td><td width="150">Kwota PLN</td>
+                </tr>
+                <tr>
+                    <td width="150" >Sprzedaż</td>
+                    <td width="150">145</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="monthExpense" class="expenseTable">
+                <table>
+                    
+                    <tr>
+                        <td colspan="2">Wydatki</td>
+                    </tr>
+                    <tr>
+                        <td width="150">Kategoria</td><td width="150">Kwota PLN</td>
+                    </tr>
+                    <tr>
+                        <td width="150" >Jedzenie</td>
+                        <td width="150">145</td>
+                    </tr>
+                </table>
+            </div>  
+            <div style="clear:both;"> </div>
+        </main>
+        </article>
+    </div>
+    <div class="yesNoMoney">
+            Bankrut?
+        </div>   
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Wydatki</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+</head>
+<body>
+
+    <header>
+        <h4>Wprowadź wydatek:</h3>
+    </header>
+    <article>
+        <main>
+            <div id="expenseBlank">
+                <form>
+                    <p>Kwota:<input type="text" id="amountOfExpense" placeholder="..." onfocus="this.placeholder=''" onblur="this.placeholder='...'"></p>
+                    Data :<span style="font-size: 15px">  (w postaci rrrr-mm-dd np. 2018-01-30. Domyślnie wstaw aktualną datę)</span><input type="text" id="amountOfExpense" >
+                    <p>Sposób płatności:</p>
+                    <form action="">
+                            <input type="radio" name="typeOfPaying" value="Gotówka">Gotówka
+                            <input type="radio" name="typeOfPaying" value="Karta debetowa">Karta debetowa
+                            <input type="radio" name="typeOfPaying" value="Karta kredytowa">Karta kredytowa
+                    </form>
+                    <form action="">
+                        <span style="margin-right: 20px"> Kategoria:</span> 
+                        <select name="categoryOfExpense:">
+                            <option>Jedzenie</option>
+                            <option>Mieszkanie</option>
+                            <option>Transport</option>
+                            <option>Telekomunikacja</option>
+                            <option>Opieka zdrowotna</option>
+                            <option>Ubranie</option>
+                            <option>Higiena</option>
+                            <option>Dzieci</option>
+                            <option>Rozrywka</option>
+                            <option>Wycieczka</option>
+                            <option>Szkolenia</option>
+                            <option>Książki</option>
+                            <option>Oszczędności</option>
+                            <option>Na złotą jesień - emeryturę</option>
+                            <option>Spłata długów</option>
+                            <option>Darowizna</option>
+                            <option>Inne wydatki</option>
+                        </select>
+                    </form>
+                    <p>Komentarz:<input type="text" id="commentsEx" placeholder="Opcjonalnie" onfocus="this.placeholder=''" onblur="this.placeholder='Opcjonalnie'"></p>
+                </form><span style="margin-right: 50px">
+                <input type="submit" value="Dodaj"/><input type="submit" value="Anuluj" /></span>
+             </div>   
+             <div id="expensePhoto">
+                 <img src="img/save3.png"/>
+             </div>
+
+        </main>
+    </article>
+	
+</body>
+</html>

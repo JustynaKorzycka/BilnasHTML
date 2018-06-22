@@ -1,0 +1,509 @@
+body
+{
+    background-color:#303030;
+    font-family: 'Lato', sans-serif;
+    color: #d9dde2;
+}
+
+.container
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#admission
+{
+    font-size: 45px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#ffffff;
+}
+
+.panel
+{
+    float: left;
+    margin-top: 40px;
+    margin-right:0px;
+    margin-left:120px; 
+	width:450px;
+	height:274px;
+	background-color:#666666;
+	text-align: justify;
+    padding: 15px; 
+    cursor: pointer;
+}
+
+a.linki
+{
+    text-decoration: none;
+    color: #ffffff;
+    width:230px;
+	height:142px;
+}
+
+#registration
+{
+    background-color: #d6227f;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#registration:hover
+{
+    background-color: #d62254;
+    -webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+
+#logIn
+{
+    background-color: #158cbf;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#logIn:hover
+{
+    background-color: #076d99;
+    -webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+#quatation
+{
+    margin: 30px;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#blanks
+{
+    width: 400px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+    float: left;
+}
+
+input[type=text],
+input[type=password]
+{
+    width: 450px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+#formImage
+{
+    float: left;
+    margin-left: 120px;
+    margin-top: 70px;
+    height: 317px;
+    width: 600px;
+
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #99062f;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 15px 10px;
+	margin-top: 5px;
+	border: none;
+	border-radious: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+    outline: none;
+    margin-left: 10px;
+}
+
+input[type=submit]:hover
+{
+    background-color: #c6073d;
+}
+
+h2
+{
+    margin-left: 100px;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+#loginBlank
+{
+    
+    float: left;
+    margin-left: 100px;
+    margin-top: 25px;
+    width: 400px;
+    font-size: 20px;
+
+}
+
+#loginPicture
+{
+    float: left;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+h3
+{
+    font-size: 23px;
+    letter-spacing: 3px;
+    margin-left: 300px;
+
+}
+
+#hello
+{
+    float: left;
+    width: 1200px;
+    margin-bottom: 15px;
+}
+#logOut
+{
+    width: 100px;
+    float: left;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+a#linkLogOut
+{
+    text-decoration: none;
+    color: #ffffff;
+    width:230px;
+	height:142px;
+}
+#logOut:hover
+{
+    -webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#mainMenu
+{
+    width: 800px;
+    margin-left: 320px;
+    margin-right: 120px;
+    
+}
+.menuOption
+{
+    float: left;
+    width: 250px;
+    height: 180px;
+    background-color: #c6073d;
+    padding: 10px;
+    margin: 15px;
+    font-size: 22px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+}
+a.linkInMenu
+{
+    text-decoration: none;
+    color: #ffffff;
+    width:230px;
+    height:142px;
+}
+
+#addIncome
+{
+    background-color: #46af18;
+}
+#addIncome:hover
+{
+    -webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#addExpense
+{
+    background-color: #314eaf;
+}
+
+#addExpense:hover
+{
+    -webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#seeBilnas:hover
+{
+    -webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+#settings
+{
+    background-color: #681d67;
+}
+#settings:hover
+{
+    -webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+h4
+{
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-left: 60px;
+}
+#expenseBlank
+{
+    font-size: 25px;
+    margin-left: 60px;
+    width: 700px;
+    float: left;
+}
+
+
+input[type=radio]
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+select
+{
+    height:35px;
+}
+#expensePhoto
+{
+    float:left;
+    margin-right: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #c6073d;}
+
+#dates
+{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+table
+{
+    background-color: #d62254;
+    margin: 20px;
+    text-align: center;
+}
+td
+{
+    border: 3px solid gray;
+}
+
+.incomesTable
+{
+    float: left;
+}
+.expenseTable
+{
+    float: left;
+}
+.bilansContainer
+{
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.yesNoMoney
+{
+    margin-left:190px;
+    font-size: 25px;
+}
+#img4
+{
+    margin-top: -60px;
+    margin-left: 600px;
+}
+.incomesTable
+{
+    margin-top: 30px;
+}
+.expenseTable
+{
+    margin-top: 30px;
+}
+#datepickerBegin
+{
+    width: 200px;
+}
+#datepickerEnd
+{
+    width: 200px;
+    margin-top: 100px;
+}
+.ui-datepicker
+{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    font: 12pt Arial, sans-serif;
+}
+.ui-datepicker table {
+    width: 100%;
+}
+.ui-datepicker-header {
+    background: #d62254;
+    color: #ffffff;
+
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 20px;
+}
+.ui-datepicker-prev {
+    float: left;
+    cursor: pointer;
+    background-position: center -30px;
+}
+
+.ui-datepicker-next {
+    float: right;
+    cursor: pointer;
+    background-position: center 0px;
+}
+
+.ui-datepicker thead {
+    background-color: #f7f7f7;
+}
+
+.ui-datepicker th {
+    background-color:#808080;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #666666;
+}
+
+.ui-datepicker tbody td {
+    padding: 0;
+}
+
+    .ui-datepicker tbody td:last-child {
+        border-right: 0px;
+    }
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker tbody tr:last-child {
+    border-bottom: 0px;
+    }
+
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+      background: linear-gradient(#999999, #737373);
+      color:#ffffff;
+      height:40px;
+      width:40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+    background: #33adff;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background: #33adff;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    color: #e0e0e0;
+    text-shadow: 0px 1px 0px #4d7a85;
+    border: 1px solid #55838f;
+    position: relative;
+    margin: -1px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: #D6E4BE;
+    color: #000;
