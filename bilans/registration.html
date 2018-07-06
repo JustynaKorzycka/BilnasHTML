@@ -2,34 +2,60 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Rejestracja</title>
+    <title>Rejestracja</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	
+   
 	
 </head>
 <body>
+<div class="container">
 <header> 
-    <h2>Wypełnij poniższy formularz:</h2>
+    <div class="row">
+        <div class="col-xs-7">
+            <h2>Wypełnij poniższy formularz:</h2>
+        </div>
+    </div>
 </header>
 <main>
-    <div id="blanks">
-        <form>
-            <p>Imie <input type="text" id="userName" ></p>
-            <p> Adres email <input type="text" id="email"></p>
-            <p>Login <input type="text" id="userLogin"></p>
-            <p>Hasło <input type="password" id="userPassword"></p>
-            <p><input type ="submit" value="Zarejestruj" onclick="window.open ('logIn.html', 'nazwa');"></p>
-        </form>
+    <div class="row">
+        <div class="col-md-5 col-xs-10">
+            <div id="blanks">
+            <form role="form">
+                <div class="form-group">
+                    <label for="userName">Imię</label>
+                    <input type="text" class="form-control input-lg" id="userName" placeholder="Imię..." >
+                </div>
+                <div class="form-group">
+                    <label for="email">Adres email</label>
+                    <input type="text" class="form-control input-lg" id="email" placeholder="twoj@mail.com" >
+                </div>
+                <div class="form-group">
+                    <label for="userLogin">Login</label>
+                    <input type="text" class="form-control input-lg" id="userLogin" placeholder="Login..." >
+                </div>
+                <div class="form-group">
+                    <label for="userPassword">Hasło</label>
+                    <input type="password" class="form-control input-lg" id="userPassword" placeholder="tajne hasło..." >
+                </div>
 
-    </div>
-    <div id="formImage">
-        <img src="img/save1.png"/>
-    </div>
-    <div style="clear:both;"> </div>
+                <button class="btn btn-lg btn-primary btn-block" id="regButton"type="button"onclick="window.open ('logIn.html', 'nazwa');">Zarejestruj</button>
+            
+            </form>  
+            </div>
+        </div>
+        <div class="col-md-4  col-md-offset-1 col-xs-10 col-xs-offset-1">
+            <div id="formImage">
+                    <img src="img/save1.png" >
+            </div>  
+        </div>
+
 
 </main>
+</div>
 	
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

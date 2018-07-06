@@ -20,19 +20,17 @@ body
     text-align: center;
     letter-spacing: 3px;
     padding-bottom: 10px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 35px;
+    
     color:#ffffff;
 }
 
 .panel
 {
     float: left;
-    margin-top: 40px;
-    margin-right:0px;
-    margin-left:120px; 
-	width:450px;
+    margin-top: 60px;
+    margin-right:auto;
+    margin-left:auto; 
 	height:274px;
 	background-color:#666666;
 	text-align: justify;
@@ -86,8 +84,8 @@ a.linki
 #quatation
 {
     margin: 30px;
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 90px;
+    font-size: 23px;
     text-align: center;
 
 }
@@ -99,54 +97,39 @@ a.linki
     margin-left: 100px;
     margin-top: 50px;
     font-size: 20px;
-    float: left;
+    margin-right: 0px;
+ 
 }
 
-input[type=text],
-input[type=password]
-{
-    width: 450px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    margin-left: 15px;
 
-}
 #formImage
 {
-    float: left;
-    margin-left: 120px;
+    margin-left: 0;
     margin-top: 70px;
-    height: 317px;
-    width: 600px;
+    
 
 }
 
-input[type=submit]
+#regButton
 {
-	width: 300px;
-	background-color: #99062f;
-	font-size: 20px;
-	color: #ffffff;
-	padding: 15px 10px;
-	margin-top: 5px;
-	border: none;
-	border-radious: 5px;
-	cursor: pointer;
-	letter-spacing: 2px;
+    background-color: #99062f; 
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 30px;
     outline: none;
-    margin-left: 10px;
+    height: 60px;
 }
-
-input[type=submit]:hover
+#regButton:hover
 {
     background-color: #c6073d;
 }
 
+
 h2
 {
     margin-left: 100px;
-    margin-top: 80px;
+    margin-top: 60px;
     letter-spacing: 2px;
     margin-bottom: 0px;
     font-size: 30px;
@@ -160,37 +143,29 @@ h2
     margin-top: 25px;
     width: 400px;
     font-size: 20px;
+    margin-bottom: 20px;
 
 }
 
 #loginPicture
 {
-    float: left;
-    margin-left: 200px;
-    margin-top: 0px;
+    
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 h3
 {
-    font-size: 23px;
+    font-size: 30px;
     letter-spacing: 3px;
-    margin-left: 300px;
-
+    margin-bottom: 50px;
 }
 
-#hello
-{
-    float: left;
-    width: 1200px;
-    margin-bottom: 15px;
-}
+
 #logOut
 {
     width: 100px;
-    float: left;
     transition: transform 0.2s ease-in-out;
-
-
 }
 a#linkLogOut
 {
@@ -206,21 +181,13 @@ a#linkLogOut
 	transform: scale(1.2);
 }
 
-#mainMenu
-{
-    width: 800px;
-    margin-left: 320px;
-    margin-right: 120px;
-    
-}
 .menuOption
 {
-    float: left;
-    width: 250px;
-    height: 180px;
+    
     background-color: #c6073d;
     padding: 10px;
-    margin: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
     font-size: 22px;
     text-align: center;
     transition: transform 0.4s ease-in-out;
@@ -277,33 +244,124 @@ a.linkInMenu
 h4
 {
     font-size: 28px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#incomeBlank
+{
+    font-size: 25px;
     margin-left: 60px;
+    width: 700px;
 }
 #expenseBlank
 {
     font-size: 25px;
     margin-left: 60px;
     width: 700px;
-    float: left;
 }
 
-
-input[type=radio]
+#optionExpenses
 {
-    margin-left: 10px;
+    margin-top:20px;
+}
+
+#addExpenseButton
+{
     margin-right: 20px;
-    margin-bottom: 40px;
+    background-color: #99062f; 
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    outline: none;
+    height: 60px;
+}
+#addExpenseButton:hover
+{
+    background-color: #c6073d;
 }
 
-select
+#notExpenseButton
 {
-    height:35px;
+    margin-right: 20px;
+    background-color: #99062f; 
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    outline: none;
+    height: 60px;
 }
+#notExpenseButton:hover
+{
+    background-color: #c6073d;
+}
+
+#addIncomeButton
+{
+    margin-right: 20px;
+    background-color: #99062f; 
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    outline: none;
+    height: 60px;
+}
+#addIncomeButton:hover
+{
+    background-color: #c6073d;
+}
+
+#notIncomeButton
+{
+    margin-right: 20px;
+    background-color: #99062f; 
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    outline: none;
+    height: 60px;
+}
+#notIncomeButton:hover
+{
+    background-color: #c6073d;
+}
+
+#incomeCategory
+{
+    margin-bottom: 50px;
+}
+.help-block
+{
+    font-size: 15px;
+}
+
 #expensePhoto
 {
-    float:left;
-    margin-right: 10px;
+   margin-top: 30px;
+   margin-left: 20px;
+   
+}
+#buttonWithDate
+{
+    background-color: #c6073d;
+    height: 65px;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+#dropMenuDate
+{
+    font-size: 15px;
+    width: 250px;
+
 }
 
 .dropbtn {
@@ -349,67 +407,39 @@ select
     font-size: 20px;
 }
 
+#todayMonth
+{
+    font-size: 20px;
+    text-align: center;
+}
+#lastMonth
+{
+    font-size: 20px;
+    text-align: center;
+}
+
 table
 {
     background-color: #d62254;
-    margin: 20px;
     text-align: center;
-}
-td
-{
-    border: 3px solid gray;
+    margin-top: 35px;
 }
 
-.incomesTable
-{
-    float: left;
-}
-.expenseTable
-{
-    float: left;
-}
-.bilansContainer
-{
-    width: 1000px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
+
 .yesNoMoney
 {
-    margin-left:190px;
+    text-align: center;
     font-size: 25px;
+    margin-top: 30px;
 }
 #img4
 {
-    margin-top: -60px;
-    margin-left: 600px;
+    margin-top: 50px;
+
 }
-.incomesTable
-{
-    margin-top: 30px;
-}
-.expenseTable
-{
-    margin-top: 30px;
-}
-#datepickerBegin
-{
-    width: 200px;
-}
-#datepickerEnd
-{
-    width: 200px;
-    margin-top: 100px;
-}
-.ui-datepicker
-{
-    width: 300px;
-    height: 300px;
-    margin: 0;
-    font: 12pt Arial, sans-serif;
-}
+
+
+
 .ui-datepicker table {
     width: 100%;
 }
@@ -504,6 +534,11 @@ td
     margin: -1px;
 }
 
+
+
 .ui-datepicker-unselectable .ui-state-default {
     background: #D6E4BE;
-    color: #000;
+    color: #000;}
+
+
+

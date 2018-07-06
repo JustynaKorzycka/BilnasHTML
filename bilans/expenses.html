@@ -2,60 +2,101 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Wydatki</title>
+    <title>Wydatki</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	
 </head>
 <body>
-
+<div class="container">
     <header>
-        <h4>Wprowadź wydatek:</h3>
+        <div class="row">
+            <div class="col-md-5 col-xs-10">
+                <h4>Wprowadź wydatek:</h4>
+            </div>
+        </div>
     </header>
     <article>
-        <main>
-            <div id="expenseBlank">
-                <form>
-                    <p>Kwota:<input type="text" id="amountOfExpense" placeholder="..." onfocus="this.placeholder=''" onblur="this.placeholder='...'"></p>
-                    Data :<span style="font-size: 15px">  (w postaci rrrr-mm-dd np. 2018-01-30. Domyślnie wstaw aktualną datę)</span><input type="text" id="amountOfExpense" >
-                    <p>Sposób płatności:</p>
-                    <form action="">
-                            <input type="radio" name="typeOfPaying" value="Gotówka">Gotówka
-                            <input type="radio" name="typeOfPaying" value="Karta debetowa">Karta debetowa
-                            <input type="radio" name="typeOfPaying" value="Karta kredytowa">Karta kredytowa
-                    </form>
-                    <form action="">
-                        <span style="margin-right: 20px"> Kategoria:</span> 
-                        <select name="categoryOfExpense:">
-                            <option>Jedzenie</option>
-                            <option>Mieszkanie</option>
-                            <option>Transport</option>
-                            <option>Telekomunikacja</option>
-                            <option>Opieka zdrowotna</option>
-                            <option>Ubranie</option>
-                            <option>Higiena</option>
-                            <option>Dzieci</option>
-                            <option>Rozrywka</option>
-                            <option>Wycieczka</option>
-                            <option>Szkolenia</option>
-                            <option>Książki</option>
-                            <option>Oszczędności</option>
-                            <option>Na złotą jesień - emeryturę</option>
-                            <option>Spłata długów</option>
-                            <option>Darowizna</option>
-                            <option>Inne wydatki</option>
-                        </select>
-                    </form>
-                    <p>Komentarz:<input type="text" id="commentsEx" placeholder="Opcjonalnie" onfocus="this.placeholder=''" onblur="this.placeholder='Opcjonalnie'"></p>
-                </form><span style="margin-right: 50px">
-                <input type="submit" value="Dodaj"/><input type="submit" value="Anuluj" /></span>
-             </div>   
-             <div id="expensePhoto">
-                 <img src="img/save3.png"/>
-             </div>
+    <main>
+        <div class="row">
+            <div class="col-md-5 col-xs-10">
+                <div id="expenseBlank">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="amountOfExpense" class="col-xs-4 col-md-3 control-label"><p class="text-left">Kwota:</p></label>
+                            <div class="col-xs-7 col-md-6">
+                                <input type="text" class="form-control input-lg" id="amountOfExpense" placeholder="... zł" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="dateOfExpense" class="col-xs-4 col-md-3 control-label"><p class="text-left">Data:</p></label>
+                                <div class="col-xs-7 col-md-6">
+                                    <input type="text" class="form-control input-lg" id="dateOfExpense" placeholder="..." >
+                                    <span class="help-block">w postaci rrrr-mm-dd np. 2018-01-30. Domyślnie wstaw aktualną datę</span>
+                                </div>
+                        </div>
 
-        </main>
+                        <div class="radio">
+                            <p>Sposób płatoności: </p>
+                            <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="chash"> Gotówka
+                            </label>
+                            <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="card"> Karta debetowa
+                            </label>
+                            <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="creditCart"> Karta kredytowa
+                            </label>
+                        </div>
+                        <div class="form-group" id="optionExpenses">
+                            <label for="category" class="col-xs-4 col-md-3 control-label"><p class="text-left">Kategoria:</p></label>
+                                <div class="col-xs-7 col-md-6">
+                                    <select class="form-control" name="category">
+                                        <option>Jedzenie</option>
+                                        <option>Mieszkanie</option>
+                                        <option>Transport</option>
+                                        <option>Telekomunikacja</option>
+                                        <option>Opieka zdrowotna</option>
+                                        <option>Ubranie</option>
+                                        <option>Higiena</option>
+                                        <option>Dzieci</option>
+                                        <option>Rozrywka</option>
+                                        <option>Wycieczka</option>
+                                        <option>Szkolenia</option>
+                                        <option>Książki</option>
+                                        <option>Oszczędności</option>
+                                        <option>Na złotą jesień - emeryturę</option>
+                                    </select> 
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments" class="col-xs-4 col-md-3 control-label"><p class="text-left">Komentarz :</p></label>
+                            <div class="col-xs-7 col-md-6">
+                                <textarea class="form-control" rows="2" placeholder="Opcjonalnie"></textarea>
+                            </div> 
+                        </div>
+                        <p>
+                        <button class="btn btn-lg btn-primary " id="addExpenseButton"type="button"onclick="window.open ('#', 'nazwa');">Dodaj</button>
+                        <button class="btn btn-lg btn-primary " id="notExpenseButton"type="button"onclick="window.open ('#', 'nazwa');">Anuluj</button>
+                        </p>
+                    </form>
+                </div>
+            </div> 
+            <div class="col-md-3 col-md-offset-2 col-xs-5 col-xs-offset-1">
+                <div id="expensePhoto">
+                    <img src="img/save3.png" >
+                </div>  
+            </div>
+        </div>
+
+    </main>
     </article>
+</div>
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
 	
 </body>
 </html>

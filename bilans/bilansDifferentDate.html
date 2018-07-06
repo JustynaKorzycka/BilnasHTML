@@ -2,74 +2,120 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Bilans</title>
+    <title>Bilans</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script>
     $( function() {
     $( "#datepickerBegin").datepicker();} );
 
  $( function() {
     $( "#datepickerEnd").datepicker();} );
-
 </script>	
 	
 </head>
 <body>
+<div id="container">
     <header>
-        <p><span style="font-size:25px; margin-left: 400px; padding: 20px;">Przegląd bilansu finansowego z bieżącego miesiąca</span></p>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>Przegląd bilansu finansowego z wybranego okresu</h4>
+            </div>
+        </div>
     </header>
     <article>
     <main>
-    <div class="userDates">
-        <form>
-            <p>Początkowa data: <input type="text" id="datepickerBegin"></p>
-            <p>Końcowa data: <input type="text" id="datepickerEnd"></p>
-        </form>
-    </div>
-    <div class="bilansContainer">
-        <div id="todayMonth"> </div>
-        <div id="monthIncomes" class="incomesTable">
-            <table>
-                
-                <tr>
-                    <td colspan="2">Przychody</td>
-                </tr>
-                <tr>
-                    <td width="150">Kategoria</td><td width="150">Kwota PLN</td>
-                </tr>
-                <tr>
-                    <td width="150" >Sprzedaż</td>
-                    <td width="150">145</td>
-                </tr>
-            </table>
+    <div class="row">
+        <div class="col-xs-5 col-xs-offset-1">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="datepickerBegin" class="col-sm-4 control-label">Początkowa data: </label>
+                    <div class="col-sm-7">
+                        <input type="text" id="datepickerBegin" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="datepickerEnd" class="col-sm-4 control-label">Końcowa data: </label>
+                    <div class="col-sm-7">
+                        <input type="text" id="datepickerEnd" class="form-control">
+                    </div>
+                </div>    
+            </form>
         </div>
-        
-        <div id="monthExpense" class="expenseTable">
-                <table>
-                    
-                    <tr>
-                        <td colspan="2">Wydatki</td>
-                    </tr>
-                    <tr>
-                        <td width="150">Kategoria</td><td width="150">Kwota PLN</td>
-                    </tr>
-                    <tr>
-                        <td width="150" >Jedzenie</td>
-                        <td width="150">145</td>
-                    </tr>
-                </table>
-            </div>  
-            <div style="clear:both;"> </div>
-        </main>
-        </article>
     </div>
-    <div class="yesNoMoney">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">   
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="table-responsive col-xs-11">
+                        <table class="table table-bordered table-condensed" id="incomeTable">
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class= "text-center">Przychody</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th class= "text-center">#</th>
+                                    <th class= "text-center">Kategoria</th>
+                                    <th class= "text-center">Kwota PLN</th>
+                                </tr>
+                            </thead>
+                            <tbod>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Sprzedaż</td>
+                                    <td>145</td>
+                                </tr> 
+                            </tbod>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="table-responsive col-xs-11">
+                        <table class="table table-bordered  table-condensed" id="expenseTable">
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class= "text-center">Wydatki</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th class= "text-center">#</th>
+                                    <th class= "text-center">Kategoria</th>
+                                    <th class= "text-center">Kwota PLN</th>
+                                </tr>
+                            </thead>
+                            <tbod>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jedzenie</td>
+                                    <td>145</td>
+                                </tr> 
+                            </tbod>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    </main>
+    </article>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="yesNoMoney">
             Bankrut?
-        </div>   
+            </div>   
+        </div>
+    </div> 
+</div>
     <script type="text/javascript" src="main.js"></script>
     <script src="memory.js"></script>
+    <script
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
