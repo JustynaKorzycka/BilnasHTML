@@ -1,0 +1,62 @@
+<?php
+session_start();
+if(!isset($_SESSION['userId']))
+{
+    header('Location: index.php');
+    exit();
+}
+?>
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+    <title>Bilans</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ 
+	
+	
+</head>
+<body>
+    <div class="container">
+        <header> 
+            <div class="row">
+                <div class="col-xs-7">
+                    <h4>Przegląd bilansu finansowego</h4>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-md-4 col-xs-4"> 
+                    <div id="dates">           
+                        <div class="btn-group btn-block">
+                            <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" id="buttonWithDate">
+                            Wybierz datę <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu btn-block" id="dropMenuDate" role="menu">
+                                <li><a href="bilansCurrentMonth.php">bieżący miesiąc</a> </li>
+                                <li><a href="bilansLastMonth.php">poprzedni miesiąc</a></li>
+                                <li><a href="bilansCurrentYear.php
+                                ">bieżący rok</a></li>
+                                <li><a href="bilansDifferentDate.php" id="differentDate">niestandardowa data</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script src="main.js"></script>
+                <div class="col-md-4  col-md-offset-2 col-xs-10 col-xs-offset-1">
+                    <div id="img4">
+                        <img src="img/save4.png" >
+                    </div>  
+                </div>
+            </div>
+   
+        </main>
+    </div>
+    <script src="memory.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
